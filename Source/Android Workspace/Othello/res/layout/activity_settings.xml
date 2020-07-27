@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Space1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/felt"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:onClick="exitToMainMenu"
+        android:text="@string/main_menu_button_text" />
+
+    <TextView
+        android:id="@+id/chipSetTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chip_set" />
+
+    <RadioGroup
+        android:id="@+id/chipSetRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/set1RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/chip_set_1" />
+
+        <RadioButton
+            android:id="@+id/set2RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_set_2" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/boardTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/boardTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/board_type" />
+
+        <RadioButton
+            android:id="@+id/boardType1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/board_type_1" />
+
+        <RadioButton
+            android:id="@+id/boardType2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/board_type_2" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/timedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Qtimed" />
+
+    <CheckBox
+        android:id="@+id/timedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timed" />
+
+    <TextView
+        android:id="@+id/noOfPlayersTextView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_of_players" />
+
+    <RadioGroup
+        android:id="@+id/playerRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/singlePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/single_player" />
+
+        <RadioButton
+            android:id="@+id/twoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/two_player" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/timeLimitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time_limit" />
+
+    <EditText
+        android:id="@+id/timeLimitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="false" />
+
+    <TextView
+        android:id="@+id/choosePlayerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_player_details" />
+
+    <Button
+        android:id="@+id/player1Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text= "@string/player_1_details"
+        android:onClick="player1Details"/>
+
+    <Button
+        android:id="@+id/player2Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/player_2_details"
+        android:onClick="player2Details"/>
+
+</LinearLayout>

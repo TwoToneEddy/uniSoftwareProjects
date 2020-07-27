@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProgressiveOverload</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="selectWorkoutButtonText">Select Workout</string>
+    <string name="editWorkoutsButtonText">Edit Workouts</string>
+    <string name="editExercisesButtonText">Edit Exercises</string>
+    <string name="viewStatisticsButtonText">View Statistics</string>
+    <string name="createWorkoutButtonText">Create Workout</string>
+    <string name="removeWorkoutButtonText">Remove Workout</string>
+    <string name="addExerciseButtonText">Add Exercise</string>
+    <string name="saveWorkoutButtonText">Save</string>
+    <string name="cancelButtonText">Cancel</string>
+    <string name="selectExercisePhotoButtonText">Select Photo</string>
+    <string name="saveExerciseButtonText">Save</string>
+    <string name="createExerciseButtonText">Create Exercise</string>
+    <string name="removeExerciseButtonText">Remove Exercise</string>
+    <string name="selectExerciseLabelText">Select Exercise</string>
+    <string name="titleLabelText">Exercise Title :</string>
+    <string name="restLabelText">Rest Period :</string>
+    <string name="viewStatisticsFSButtonText">Full Screen</string>
+    <string name="weightRadioText">View Weight</string>
+    <string name="repsRadioText">View Reps</string>
+    <string name="workRadioText">View Work Done</string>
+    <string name="restButtonText">Rest</string>
+    <string name="startWorkoutButtonText">Start Workout</string>
+    <string name="selectedWorkoutLabelText">Start: </string>
+    <string name="lastWorkoutLabelText">Last Workout Performed:  </string>
+    <string name="todaysWorkoutLabelText">Recommended Workout: </string>
+    <string name="dayLabelText">Recommended Day : </string>
+    <string name="muscleGroupLabelText">Muscle Groups : </string>
+    <string name="title_activity_view_statistics">ViewStatistics</string>
+    <string name="title_activity_edit_workouts">EditWorkouts</string>
+    <string name="title_activity_select_workouts">SelectWorkouts</string>
+    <string name="title_activity_edit_exercises">EditExercises</string>
+    <string name="title_activity_edit_workouts_detail">EditWorkoutsDetailActivity</string>
+    <string name="title_activity_edit_exercises_detail">EditExercisesDetailActivity</string>
+    <string name="title_activity_view_statistics_detail">ViewStatisticsDetailActivity</string>
+    <string name="title_activity_do_workouts">DoWorkouts</string>
+    <string name="title_activity_do_workouts_detail">DoWorkoutsDetailActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_test2">Test2Activity</string>
+    <string name="repsLabelText">Reps:</string>
+    <string name="weightLabelText">Weight:</string>
+    <string name="lastPerformedLabelText">Last Performed: </string>
+    <string name="lastPerformedFieldText">....... </string>
+    <string name="previousLabelText">Previous </string>
+    <string name="saveButtonText">Save </string>
+    <string name="title_activity_view_statistics_full_screen">ViewStatisticsFullScreen</string>
+    
+    <string name="restCounterTextViewText">30:00 </string>
+
+</resources>

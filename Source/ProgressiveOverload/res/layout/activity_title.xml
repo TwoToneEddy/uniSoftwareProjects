@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dumbellss"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    tools:context="com.example.progressiveoverload.TitleActivity" >
+<!--  
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="true"
+        android:paddingBottom="0dp"
+        android:src="@drawable/dumbbell" />
+        -->
+        <Space
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_weight="1"/>
+    
+    <Button
+        android:id="@+id/selectWorkoutButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectWorkoutButtonPressed"
+        android:text="@string/selectWorkoutButtonText" />
+    
+    <Button
+        android:id="@+id/editWorkoutsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editWorkoutsButtonPressed"
+        android:text="@string/editWorkoutsButtonText" />
+    
+    <Button
+        android:id="@+id/editExercisesButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editExercisesButtonPressed"
+        android:text="@string/editExercisesButtonText" />
+    
+    <Button
+        android:id="@+id/viewStatisticsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewStatisticsButtonPressed"
+        android:text="@string/viewStatisticsButtonText" />
+    
+    
+    <Button
+        android:id="@+id/loadDefaultsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadDefaultsButtonPressed"
+        android:text="Load Defaults" />
+
+</LinearLayout>

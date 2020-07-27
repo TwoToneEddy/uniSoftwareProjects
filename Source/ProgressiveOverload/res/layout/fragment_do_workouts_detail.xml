@@ -1,0 +1,400 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dumbellss"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingTop="0sp"
+    tools:context="com.example.progressiveoverload.DoWorkouts.DoWorkoutsDetailFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/exerciseTitleTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+      	    android:layout_gravity="center|center"
+      	    android:gravity="center_vertical|center_horizontal"
+  			android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	</LinearLayout>
+	
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1" >
+        
+	    <TextView
+	            android:id="@+id/lastPerformedLabel"
+	            android:layout_column="0"
+	            android:layout_gravity="left|center"
+	            android:layout_row="0"
+	            android:text="@string/lastPerformedLabelText"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <TextView
+	            android:id="@+id/lastPerformedField"
+	            android:layout_column="1"
+	            android:layout_gravity="left|center"
+	            android:layout_row="0"
+	            android:text="@string/lastPerformedFieldText"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    </GridLayout>
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="1" >
+	    
+        	<TextView
+        	    android:id="@+id/previousLabel"
+        	    android:layout_column="0"
+        	    android:layout_gravity="center|center"
+        	    android:layout_row="0"
+        	    android:paddingBottom="10sp"
+        	    android:text="@string/previousLabelText"
+        	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+    </GridLayout>
+     
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:paddingBottom="10dp"
+        android:rowCount="2" >
+        	
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="80sp" android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80sp"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                
+                <TextView
+		            android:id="@+id/repsLabel1"
+		            android:text="@string/repsLabelText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+        	    	android:layout_gravity="center|center"
+		            android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="70"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                
+                <TextView
+		            android:id="@+id/preRepsText1"
+		            android:text="5"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green"/>
+		       	
+		       	
+		        <TextView
+		            android:id="@+id/preRepsText2"
+		            android:text="5"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green" />
+		        
+		        
+		        <TextView
+		            android:id="@+id/preRepsText3"
+		            android:text="5"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green" />
+		        
+		        <TextView
+		            android:id="@+id/preRepsText4"
+		            android:text="5"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green" />
+		        
+		        <TextView
+		            android:id="@+id/preRepsText5"
+		            android:text="5"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green"/>  
+                
+            </LinearLayout>
+
+		</LinearLayout>
+		
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="80sp" android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80sp"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+		        
+                <TextView
+		            android:id="@+id/weightLabel1"
+		            android:text="@string/weightLabelText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+        	    	android:layout_gravity="center|center"
+		            android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+		    </LinearLayout>
+		    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="70"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                
+		        <TextView
+		            android:id="@+id/preWeightText1"
+		            android:text="10kg"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green" />
+		        
+		        
+		        <TextView
+		            android:id="@+id/preWeightText2"
+		            android:text="10kg"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green"/>
+		        
+		        
+		        <TextView
+		            android:id="@+id/preWeightText3"
+		            android:text="10kg"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green" />
+		        
+		        
+		        <TextView
+		            android:id="@+id/preWeightText4"
+		            android:text="10kg"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green"/>
+		        
+		        
+		        <TextView
+		            android:id="@+id/preWeightText5"
+		            android:text="10kg"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"
+			        android:background="@color/trans_green" />
+		    </LinearLayout>	
+		</LinearLayout>
+    </GridLayout>
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:paddingBottom="10dp"
+        android:rowCount="2" >
+        	
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="80sp" android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80sp"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                
+                <TextView
+		            android:id="@+id/repsLabel2"
+		            android:text="@string/repsLabelText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+        	    	android:layout_gravity="center|center"
+		            android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="70"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                
+                <Spinner
+		            android:id="@+id/repsSpinner1"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"/>
+		       	
+		       	
+		        <Spinner
+		            android:id="@+id/repsSpinner2"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1" />
+		        
+		        
+		        <Spinner
+		            android:id="@+id/repsSpinner3"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"/>
+		        
+		        <Spinner
+		            android:id="@+id/repsSpinner4"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1" />
+		        
+		        <Spinner
+		            android:id="@+id/repsSpinner5"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"/>  
+                
+            </LinearLayout>
+
+		</LinearLayout>
+		
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="80sp" android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80sp"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+		        
+                <TextView
+		            android:id="@+id/weightLabel2"
+		            android:text="@string/weightLabelText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+        	    	android:layout_gravity="center|center"
+		            android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+		    </LinearLayout>
+		    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="70"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                
+		        <Spinner
+		            android:id="@+id/weightSpinner1"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1" />
+		        
+		        
+		        <Spinner
+		            android:id="@+id/weightSpinner2"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"/>
+		        
+		        
+		        <Spinner
+		            android:id="@+id/weightSpinner3"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1" />
+		        
+		        
+		        <Spinner
+		            android:id="@+id/weightSpinner4"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1"/>
+		        
+		        
+		        <Spinner
+		            android:id="@+id/weightSpinner5"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+            		android:gravity="center"
+			        android:layout_weight="1" />
+		    </LinearLayout>	
+		</LinearLayout>
+    </GridLayout>
+    
+    <Space
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/restCounterTextView"
+            android:text="@string/restCounterTextViewText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+      	    android:layout_gravity="center|center"
+      	    android:gravity="center_vertical|center_horizontal"
+  			android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+        
+        <Button
+	        android:id="@+id/saveButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/saveButtonText"
+  			android:layout_weight="1" />
+        
+	    <Button
+	        android:id="@+id/restButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/restButtonText"
+  			android:layout_weight="1" />
+	    
+	</LinearLayout>
+
+</LinearLayout> 

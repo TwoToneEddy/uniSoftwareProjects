@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.rssfeed.MyListFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?android:attr/actionBarSize">
+    </fragment>
+
+</LinearLayout>

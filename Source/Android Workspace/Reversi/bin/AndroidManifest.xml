@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.drawtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.drawtest.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.drawtest.DrawView"
+            android:label="@string/title_activity_draw_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.drawtest.MainActivity3"
+            android:label="@string/title_activity_main_activity3" >
+        </activity>
+        <activity
+            android:name="com.example.drawtest.GameActivity"
+            android:label="@string/title_activity_game"
+            android:parentActivityName="com.example.MainActivity.java"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.MainActivity.java" />
+        </activity>
+        <activity
+            android:name="com.example.drawtest.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.drawtest.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.drawtest.MainActivity" />
+        </activity>
+        <activity
+            android:name="ac.uk.brookes.lh09092543.reversi.ScoreboardActivity"
+            android:label="@string/title_activity_scoreboard"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.helloworld.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.helloworld.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

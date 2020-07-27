@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrawTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_draw_view">DrawView</string>
+    <string name="title_activity_main_activity3">MainActivity3</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="startButtonText">Start Game</string>
+    <string name="settingsButtonText">Settings</string>
+    <string name="scoreboardButtonText">High Scores</string>
+    <string name="title_activity_scoreboard">ScoreboardActivity</string>
+    <string name="main_menu_button_text">Main Menu</string>
+
+</resources>

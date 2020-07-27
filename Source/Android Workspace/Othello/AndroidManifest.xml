@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ac.uk.brookes.lh09092543.othello"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/othello"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:hardwareAccelerated="false">
+        <activity
+            android:name="ac.uk.brookes.lh09092543.othello.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ac.uk.brookes.lh09092543.othello.GameView"
+            android:label="@string/title_activity_draw_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ac.uk.brookes.lh09092543.othello.MainActivity3"
+            android:label="@string/title_activity_main_activity3" >
+        </activity>
+        <activity
+            android:name="ac.uk.brookes.lh09092543.othello.GameActivity"
+            android:label="@string/title_activity_game"
+            android:parentActivityName="ac.uk.brookes.lh09092543.othello.MainActivity.java"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ac.uk.brookes.lh09092543.othello.MainActivity.java" />
+        </activity>
+        <activity
+            android:name="ac.uk.brookes.lh09092543.othello.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="ac.uk.brookes.lh09092543.othello.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ac.uk.brookes.lh09092543.othello.MainActivity" />
+        </activity>
+        <activity
+            android:name="ac.uk.brookes.lh09092543.othello.ScoreBoardActivity"
+            android:label="@string/title_activity_scoreboard"
+            android:parentActivityName="ac.uk.brookes.lh09092543.othello.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ac.uk.brookes.lh09092543.othello.MainActivity" />
+        </activity>
+
+        <provider
+            android:name="ac.uk.brookes.lh09092543.othello.ScoreProvider"
+            android:authorities="ac.uk.brookes.lh09092543.othello" >
+        </provider>
+
+        <activity
+            android:name="ac.uk.brookes.lh09092543.othello.PlayerSelect"
+            android:label="@string/title_activity_player_select"
+            android:screenOrientation="portrait"
+            android:parentActivityName="ac.uk.brookes.lh09092543.othello.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ac.uk.brookes.lh09092543.othello.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

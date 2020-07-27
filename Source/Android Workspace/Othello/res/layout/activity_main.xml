@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/felt"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="true"
+        android:paddingBottom="0dp"
+        android:src="@drawable/reversilogo2" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startGameActivity"
+        android:text="@string/startButtonText" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startSettingsActivity"
+        android:text="@string/settingsButtonText" />
+
+    <Button
+        android:id="@+id/scoreboardButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="startScoreboardActivity"
+        android:text="@string/scoreboardButtonText" />
+
+</LinearLayout>
